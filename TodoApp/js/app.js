@@ -135,4 +135,4 @@ $("#clear").click(() => {
 
 //change header background
 var currentHour = parseInt(getDate().currentTime.split(":")[0]);
-var headerBack = currentHour <= 20 && currentHour >= 8 ? $(".header").css("background-image", 'url("../asset/images/night.jpg")') : null;
+var headerBack = currentHour <= 20 && currentHour >= 8 ? $(".header").css("background-image", 'url("asset/images/night.jpg")') : null;
