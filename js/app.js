@@ -137,4 +137,4 @@ $("#clear").click(() => {
 var currentHour = new Date();
 var currentHour = parseInt(currentHour.getUTCHours()+3);
 console.log(currentHour);
-var headerBack = currentHour <= 20 && currentHour >= 8 ? $(".header").css("background-image", 'url("asset/images/day.jpg")') : null;
+var headerBack = currentHour < 20 && currentHour >= 8 ? $(".header").css("background-image", 'url("asset/images/day.jpg")') : null;
