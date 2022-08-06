@@ -134,5 +134,7 @@ $("#clear").click(() => {
 });
 
 //change header background
-var currentHour = parseInt(getDate().currentTime.split(":")[0]);
-var headerBack = currentHour >= 20 && currentHour <= 8 ? $(".header").css("background-image", 'url("asset/images/night.jpg")') : null;
+var currentHour = new Date();
+var currentHour = parseInt(currentHour.getUTCHours()+3);
+console.log(currentHour);
+var headerBack = currentHour <= 20 && currentHour >= 8 ? $(".header").css("background-image", 'url("asset/images/day.jpg")') : null;
